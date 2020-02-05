@@ -1,0 +1,87 @@
+body{
+     background: tomato;
+     margin: 0;
+}
+
+div.sidebar{
+    transition: 1s;
+}
+div.sidebar{
+    background: url("./SOLIDE.JPG");
+    padding: 20px; 
+    top: 0;
+    position: fixed;
+    height: 100vh;
+    color: white !important;
+    margin-left:-535PX;
+    }
+    .overlay {
+        background:rgba(0,0,0,0,7 )
+    }
+
+  .sidebar ul {
+      list-style-type: none;
+     
+  }
+
+
+  .sidebar li {
+     background: tomato;
+     padding: 10px;
+     margin-top: 20px;
+     border-radius: 12px;
+     overflow: hidden;
+  }
+
+  .sidebar li a {
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      transition: 0.8s;
+
+  }
+
+  .sidebar li::after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 0px;
+    height: 4px;
+    background: black;
+    
+
+}
+
+  .sidebar li:hover{
+      background: turquoise;
+      cursor: pointer;
+  }
+
+  .sidebar li::after:hover{
+      width: 100px;
+  }
+
+  .sidebar li:hover a{
+      color: white;
+  }
+
+  .sidebar p {
+      color: black;
+      font-family: cursive;
+  }
+
+  .sidebar h2{
+      color: white;
+      font-family: 'Lucida Sans',
+       'Lucida Sans Regular', 'Lucida Grande', 
+       'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  }
+  .side-close {
+      text-decoration: none;
+      color: white;
+      background: rgb(153, 0, 0);
+      position: absolute;
+      top: 0;
+      right: 0;
+  }
